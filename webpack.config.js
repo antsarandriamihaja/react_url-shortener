@@ -8,14 +8,26 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.(js)$/, use: 'babel-loader'},
-            { test: /\.css$/, use: ['style-loader', 'css-loader']}
+            { test: /\.(js)$/, use: 'babel-loader' },
+            { test: /\.css$/, use: ['style-loader', 'css-loader'] }
         ]
-        
+
     },
     plugins: [
         new HtmlWebPackPlugin({
             template: 'app/index.html'
         })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+
+        proxy: {
+            '/api/': {
+                target: 'http://localhost:3000/',
+                secure: false
+            }
+        },
+        contentBase: "./public",
+        //hot: true
+    }
 }

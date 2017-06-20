@@ -243,6 +243,9 @@ p{
     z-index: 3;
     background-color: #f9f9f9;
 }
+.user_input{
+    margin-bottom: 20px;
+}
 #user_number{
    height: 250px;
     animation: 1s ease-in 0s 1 dropDown;

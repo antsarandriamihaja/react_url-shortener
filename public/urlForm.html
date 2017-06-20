@@ -1,0 +1,71 @@
+<!doctype html>
+
+<head lang='en'>
+    <meta charset="UTF-8">
+    <title> URL shortening app</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Raleway+Dots|Bitter:700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div className='container'>
+        <div className='form_title'>
+            <img id='logo' src="https://www.international.gc.ca/world-monde/assets/images/funding-financement/GOC_colour_en.png" alt="gov_logo">
+        </div>
+
+        <div className='processing'>
+            <div className='loader'>
+                <div className="dot red bouncing"></div>
+                <div className="dot yellow bouncing"></div>
+                <div className="dot blue bouncing"></div>
+                <div className="dot purple bouncing"></div>
+                <div className='dot orange bouncing'> </div>
+            </div>
+
+            <div className='thankYou fadeIn hidden'>
+                <h1>Thank you for your payment.</h1>
+                <h3 id='black'>We promise your money will go to health care.</h3>
+            </div>
+        </div>
+        <br/>
+        <div className='service card hidden fadeIn'>
+            <div id='instructions'>
+                <h1> URL-shortening service</h1>
+                <h4>Enter the URL you wish to shorten below.
+                </h4>
+
+                <br/>
+            </div>
+            <div className='url_form'>
+                <form id='user_url' data-toggle='validator'>
+                    <div className="form-group">
+                        <input name='url' id="url-field" type="text" className="form-control input-lg" placeholder="URL to shorten (format: http://www.example.com)"
+                            required>
+                    </div>
+
+                    <div className="help-block with-errors"></div>
+                    <div>
+                        <button className="btn gov shorten" type="button">SHORTEN</button>
+                    </div>
+                </form>
+            </div>
+            <div className='results'>
+                <div className='shorter'>
+                    <div id="link"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+<script src="/shorten.js"></script>
+<script src='javascripts/index.js'></script>

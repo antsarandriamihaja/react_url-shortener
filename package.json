@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "webpack": "webpack",
+    "webpack": "webpack",
     "start": "webpack-dev-server"
   },
   "author": "",
@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
     "html-webpack-plugin": "^2.28.0",
+    "react-lumberjack": "^2.0.0",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
@@ -34,11 +35,17 @@
     "body-parser": "^1.17.2",
     "bootstrap-validator": "^0.11.9",
     "express": "^4.15.3",
-    "mongodb": "^2.2.28",
-    "mongoose": "^4.10.6",
+    "html": "^1.0.0",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.10.7",
     "react": "^15.6.0",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-stripe-elements": "0.0.2",
+    "redux-form": "^6.8.0",
     "stripe": "^4.22.0"
   }
 }
